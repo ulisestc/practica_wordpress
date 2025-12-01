@@ -1,0 +1,126 @@
+2025-11-30T22:46:07+00:00 DEBUG #8059 - [New Request] POST /practica_wordpress/wp-json/wc-admin/settings/payments/providers
+2025-11-30T22:46:07+00:00 DEBUG #8059 - Webhook lock acquired for 'register'.
+2025-11-30T22:46:07+00:00 DEBUG #8059 - Webhook operation 'register' started.
+2025-11-30T22:46:07+00:00 DEBUG #8059 - GET https://api.woocommerce.com/integrations/ppc/v1/notifications/webhooks
+Response: Array
+(
+    [code] => 404
+    [message] => Not Found
+)
+
+Response Body: {"statusCode":404,"error":"Not Found","message":"Not Found"}
+
+2025-11-30T22:46:07+00:00 ERROR #8059 - Failed to delete webhooks: [Error] Not Found
+2025-11-30T22:46:07+00:00 INFO #8059 - Webhooks deleted.
+2025-11-30T22:46:08+00:00 DEBUG #8059 - POST https://api.woocommerce.com/integrations/ppc/v1/notifications/webhooks
+Request Body: {"url":"https:\/\/localhost\/practica_wordpress\/wp-json\/paypal\/v1\/incoming","event_types":[{"name":"CHECKOUT.ORDER.APPROVED"},{"name":"CHECKOUT.ORDER.COMPLETED"},{"name":"CHECKOUT.PAYMENT-APPROVAL.REVERSED"},{"name":"PAYMENT.CAPTURE.REFUNDED"},{"name":"PAYMENT.AUTHORIZATION.VOIDED"},{"name":"PAYMENT.CAPTURE.REVERSED"},{"name":"PAYMENT.ORDER.CANCELLED"},{"name":"PAYMENT.CAPTURE.DENIED"},{"name":"PAYMENT.CAPTURE.COMPLETED"},{"name":"VAULT.PAYMENT-TOKEN.CREATED"},{"name":"VAULT.PAYMENT-TOKEN.DELETED"},{"name":"PAYMENT.CAPTURE.PENDING"},{"name":"PAYMENT.SALE.COMPLETED"},{"name":"PAYMENT.SALE.REFUNDED"},{"name":"BILLING.SUBSCRIPTION.CANCELLED"},{"name":"BILLING.PLAN.PRICING-CHANGE.ACTIVATED"},{"name":"CATALOG.PRODUCT.UPDATED"},{"name":"BILLING.PLAN.UPDATED"}]}
+Response: Array
+(
+    [code] => 404
+    [message] => Not Found
+)
+
+Response Body: {"statusCode":404,"error":"Not Found","message":"Not Found"}
+
+2025-11-30T22:46:08+00:00 ERROR #8059 - Failed to subscribe webhooks: [Error] Not Found
+2025-11-30T22:46:08+00:00 DEBUG #8059 - Webhook lock released for 'register'.
+2025-11-30T22:46:20+00:00 DEBUG #8354 - [New Request] GET /practica_wordpress/wp-admin/admin.php
+2025-11-30T22:46:20+00:00 DEBUG #8354 - GET https://api.woocommerce.com/integrations/ppc/v1/customer/partners/K8SKZ36LQBWXJ/merchant-integrations/
+Response: Array
+(
+    [code] => 404
+    [message] => Not Found
+)
+
+Response Body: {"statusCode":404,"error":"Not Found","message":"Not Found"}
+
+2025-11-30T22:46:20+00:00 WARNING #8354 - [Error] Not Found CONTEXT: {"args":{"method":"GET","headers":{"Authorization":"Bearer token","Content-Type":"application/json"}},"response":{"headers":{},"body":"{"statusCode":404,"error":"Not Found","message":"Not Found"}","response":{"code":404,"message":"Not Found"},"cookies":[],"filename":null,"http_response":{"data":null,"headers":null,"status":null}}}
+2025-11-30T22:46:28+00:00 DEBUG #8618 - [New Request] GET /practica_wordpress/wp-json/wc/v3/wc_paypal/webhooks
+2025-11-30T22:46:28+00:00 DEBUG #8618 - GET https://api.woocommerce.com/integrations/ppc/v1/notifications/webhooks
+Response: Array
+(
+    [code] => 404
+    [message] => Not Found
+)
+
+Response Body: {"statusCode":404,"error":"Not Found","message":"Not Found"}
+
+2025-11-30T22:47:31+00:00 DEBUG #3324 - [New Request] POST /practica_wordpress/wp-json/wc/v3/wc_paypal/login_link
+2025-11-30T22:47:31+00:00 INFO #3324 - Generating onboarding URL for: production-express_checkout-
+2025-11-30T22:47:33+00:00 DEBUG #3324 - POST https://api.woocommerce.com/integrations/ppc/v2/customer/partner-referrals
+Request Body: {"partner_config_override":{"return_url":"http:\/\/localhost\/practica_wordpress\/wp-admin\/admin.php?page=wc-settings&tab=checkout&section=ppcp-gateway&ppcpToken=eyJrIjoicHJvZHVjdGlvbi1leHByZXNzX2NoZWNrb3V0LSIsInUiOjEsImgiOiJkNDNhZWZmNWEwYjA5NWIxNmU3NjY2ZDliYzQzYmQ2ZiJ9","return_url_description":"Return to your shop.","show_add_credit_card":false},"products":["EXPRESS_CHECKOUT"],"legal_consents":[{"type":"SHARE_DATA_CONSENT","granted":true}],"operations":[{"operation":"API_INTEGRATION","api_integration_preference":{"rest_api_integration":{"integration_method":"PAYPAL","integration_type":"FIRST_PARTY","first_party_details":{"features":["PAYMENT","REFUND","ADVANCED_TRANSACTIONS_SEARCH","TRACKING_SHIPMENT_READWRITE","BILLING_AGREEMENT"],"seller_nonce":"a1233wtergfsdt4365tzrshgfbaewa36AGa1233wtergfsdt4365tzrshgfbaewa36AG"}}}}]}
+Response Debug ID: 3b5acd69c262c
+Response: Array
+(
+    [code] => 201
+    [message] => Created
+)
+
+
+2025-11-30T22:47:46+00:00 DEBUG #7118 - [New Request] POST /practica_wordpress/wp-json/wc/v3/wc_paypal/login_link
+2025-11-30T22:47:46+00:00 DEBUG #7118 - Loaded onboarding URL from cache: production-express_checkout-
+2025-11-30T22:47:46+00:00 INFO #7118 - Using cached onboarding URL for: production-express_checkout-
+2025-11-30T22:47:46+00:00 DEBUG #2728 - [New Request] POST /practica_wordpress/wp-json/wc/v3/wc_paypal/login_link
+2025-11-30T22:47:46+00:00 DEBUG #2728 - Loaded onboarding URL from cache: production-express_checkout-
+2025-11-30T22:47:46+00:00 INFO #2728 - Using cached onboarding URL for: production-express_checkout-
+2025-11-30T22:48:39+00:00 DEBUG #1252 - [New Request] POST /practica_wordpress/wp-json/wc/v3/wc_paypal/authenticate/oauth
+2025-11-30T22:48:39+00:00 INFO #1252 - Storing one-time OAuth credentials... CONTEXT: {"shared_id":"BAAGr2L2gwL5k9FhgZugGOcpVZMcFcxyZ72EWjzNofIEdp2fCp2EB3E5brFoHHdYRbhtwSGTZ5IwHy5evc","auth_code":"C21AAPd2X2gkXWSHqWdVPSK29zdvSiuQ3xSmOmfwegd1EfSv6tTqbegZX_OEYWrozkoBFW0Psf5A3AKK5PpRHA_LrMo1dn8qQ","use_sandbox":false}
+2025-11-30T22:48:41+00:00 DEBUG #8961 - [New Request] GET /practica_wordpress/wp-admin/admin.php
+2025-11-30T22:48:41+00:00 DEBUG #8961 - Validating onboarding ppcpToken: ey...Q2ZiJ9
+2025-11-30T22:48:41+00:00 INFO #8961 - Validated onboarding ppcpToken: ey...Q2ZiJ9
+2025-11-30T22:48:41+00:00 INFO #8961 - Extracting connection data from request...
+2025-11-30T22:48:41+00:00 INFO #8961 - Found OAuth merchant data in request CONTEXT: {"merchant_id":"XL8SPM46C9CZG","merchant_email":"ulisestc27@gmail.com","seller_type":"personal"}
+2025-11-30T22:48:41+00:00 INFO #8961 - Attempting OAuth login to PayPal... CONTEXT: {"sandbox":false,"shared_id":"BAAGr2L2gwL5k9FhgZugGOcpVZMcFcxyZ72EWjzNofIEdp2fCp2EB3E5brFoHHdYRbhtwSGTZ5IwHy5evc"}
+2025-11-30T22:48:41+00:00 DEBUG #3549 - [New Request] GET /practica_wordpress/wp-admin/admin.php
+2025-11-30T22:48:41+00:00 INFO #3549 - Token is currently being processed, waiting and retrying CONTEXT: {"token":"ey...Q2ZiJ9"}
+2025-11-30T22:48:41+00:00 DEBUG #8961 - POST https://api-m.paypal.com/v1/oauth2/token/
+Response Debug ID: 8cdfc76ef358b
+Response: Array
+(
+    [code] => 200
+    [message] => OK
+)
+
+
+2025-11-30T22:48:42+00:00 DEBUG #8961 - GET https://api-m.paypal.com/v1/customer/partners/K8SKZ36LQBWXJ/merchant-integrations/credentials/
+Response Debug ID: c52089b47dcb4
+Response: Array
+(
+    [code] => 200
+    [message] => OK
+)
+
+
+2025-11-30T22:48:42+00:00 INFO #8961 - Updating connection details CONTEXT: {"is_sandbox":false,"client_id":"BAAGr2L2gwL5k9FhgZugGOcpVZMcFcxyZ72EWjzNofIEdp2fCp2EB3E5brFoHHdYRbhtwSGTZ5IwHy5evc","client_secret":"EK3I0PD5rMYKTZBbMXMk0WF4QngZCx4vCkuQLh4yEzWnCvTidRuNYUgb9NoWvHLu7o7J-ovS1oeUMJ0s","merchant_id":"XL8SPM46C9CZG","merchant_email":"ulisestc27@gmail.com","merchant_country":"","seller_type":"personal"}
+2025-11-30T22:48:42+00:00 INFO #8961 - Merchant successfully connected to PayPal
+2025-11-30T22:48:42+00:00 INFO #8961 - Calling internal REST endpoint [http://localhost/practica_wordpress/wp-json/wc/v3/wc_paypal/common/seller-account]
+2025-11-30T22:48:47+00:00 DEBUG #8961 - Finished internal REST call [http://localhost/practica_wordpress/wp-json/wc/v3/wc_paypal/common/seller-account]
+2025-11-30T22:48:47+00:00 ERROR #8961 - Internal REST error CONTEXT: {"response":{"errors":{"http_request_failed":["cURL error 28: Operation timed out after 5004 milliseconds with 0 bytes received"]},"error_data":[]}}
+2025-11-30T22:48:47+00:00 WARNING #8961 - Failed to enrich merchant details: Internal REST error CONTEXT: {"reason":"Internal REST error","details":null}
+2025-11-30T22:48:47+00:00 INFO #8961 - Flushing API caches...
+2025-11-30T22:48:47+00:00 INFO #8961 - Merchant connected, complete onboarding and set defaults.
+2025-11-30T22:48:47+00:00 DEBUG #8961 - Webhook lock acquired for 'register'.
+2025-11-30T22:48:47+00:00 DEBUG #8961 - Webhook operation 'register' started.
+2025-11-30T22:48:47+00:00 DEBUG #8961 - GET https://api.woocommerce.com/integrations/ppc/v1/notifications/webhooks
+Response: Array
+(
+    [code] => 404
+    [message] => Not Found
+)
+
+Response Body: {"statusCode":404,"error":"Not Found","message":"Not Found"}
+
+2025-11-30T22:48:47+00:00 ERROR #8961 - Failed to delete webhooks: [Error] Not Found
+2025-11-30T22:48:47+00:00 INFO #8961 - Webhooks deleted.
+2025-11-30T22:48:48+00:00 DEBUG #8961 - POST https://api.woocommerce.com/integrations/ppc/v1/notifications/webhooks
+Request Body: {"url":"https:\/\/localhost\/practica_wordpress\/wp-json\/paypal\/v1\/incoming","event_types":[{"name":"CHECKOUT.ORDER.APPROVED"},{"name":"CHECKOUT.ORDER.COMPLETED"},{"name":"CHECKOUT.PAYMENT-APPROVAL.REVERSED"},{"name":"PAYMENT.CAPTURE.REFUNDED"},{"name":"PAYMENT.AUTHORIZATION.VOIDED"},{"name":"PAYMENT.CAPTURE.REVERSED"},{"name":"PAYMENT.ORDER.CANCELLED"},{"name":"PAYMENT.CAPTURE.DENIED"},{"name":"PAYMENT.CAPTURE.COMPLETED"},{"name":"VAULT.PAYMENT-TOKEN.CREATED"},{"name":"VAULT.PAYMENT-TOKEN.DELETED"},{"name":"PAYMENT.CAPTURE.PENDING"},{"name":"PAYMENT.SALE.COMPLETED"},{"name":"PAYMENT.SALE.REFUNDED"},{"name":"BILLING.SUBSCRIPTION.CANCELLED"},{"name":"BILLING.PLAN.PRICING-CHANGE.ACTIVATED"},{"name":"CATALOG.PRODUCT.UPDATED"},{"name":"BILLING.PLAN.UPDATED"}]}
+Response: Array
+(
+    [code] => 404
+    [message] => Not Found
+)
+
+Response Body: {"statusCode":404,"error":"Not Found","message":"Not Found"}
+
+2025-11-30T22:48:48+00:00 ERROR #8961 - Failed to subscribe webhooks: [Error] Not Found
+2025-11-30T22:48:48+00:00 DEBUG #8961 - Webhook lock released for 'register'.
